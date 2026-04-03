@@ -7,32 +7,36 @@
 
 
 
-📖 Overview
+📖 Overview: 
 
 This project implements a Friend Recommendation System using Graph Data Structure and Breadth-First Search (BFS) in C.
 
 Users are represented as nodes and friendships as edges. The system suggests new connections based on friends-of-friends (level 2 connections) — similar to real-world social platforms.
 
-✨ Features
+✨ Features: 
 🔗 Graph using Adjacency List (Linked List)
 🔍 Efficient BFS Traversal
 👥 Recommends friends of friends
+
 🚫 Filters out:
 The user themselves
 Existing direct friends
-🧠 Concepts Used
+
+🧠 Concepts Used: 
 Graph Data Structure
 Breadth-First Search (BFS)
 Queue (Array Implementation)
 Linked List
-⚙️ How It Works
+
+⚙️ How It Works: 
 Build a graph from user connections
 Perform BFS from the target user
 Track levels (distance from source)
 Extract users at level 2
 Filter direct friends
 Display recommendations
-🖥️ Example
+
+🖥️ Example: 
 🔹 Input
 Enter the number of users: 5
 Enter the number of connections: 4
@@ -46,7 +50,8 @@ Enter user: 0
 Friend Recommendations for user 0:
 User 3
 User 4
-📌 Limitations
+
+📌 Limitations: 
 ❌ No ranking of recommendations
 ❌ No personalization (interests/activity not considered)
 ❌ Fixed size (Max = 100)
@@ -55,7 +60,8 @@ User 4
 📊 Add scoring system for better recommendations
 🔄 Use dynamic memory allocation
 🤖 Integrate AI/ML-based recommendation logic
-🛠️ How to Run
+
+🛠️ How to Run: 
 gcc program.c -o program
 ./program
 📂 Project Structure
